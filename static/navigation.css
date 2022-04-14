@@ -1,0 +1,46 @@
+/* Style the list */
+nav.breadcrumbs ul {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+nav.breadcrumbs ul li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+nav.breadcrumbs ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: ">";
+}
+
+/* Add a color to all links inside the list */
+nav.breadcrumbs ul li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+nav.breadcrumbs ul li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+nav.toc ul {
+  list-style-type: square;
+}
+
+nav.toc ul li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+nav.toc ul li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}

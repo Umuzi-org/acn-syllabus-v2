@@ -1,0 +1,29 @@
+{
+  "name": "eleventy-tilde-template",
+  "version": "1.0.0",
+  "description": "``` # install dependencies npm install --save-dev",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx @11ty/eleventy --serve",
+    "validate": "node scripts/validate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheenarbw/eleventy-tilde-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheenarbw/eleventy-tilde-template/issues"
+  },
+  "homepage": "https://github.com/sheenarbw/eleventy-tilde-template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.9.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "front-matter": "^4.0.2",
+    "js-yaml": "^3.14.1",
+    "yaml-schema-validator": "^1.2.2"
+  }
+}

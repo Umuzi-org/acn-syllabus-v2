@@ -1,0 +1,45 @@
+{% if content_type == "course" %}
+This is a course. That means you should make sure to go through all the content listed below. Make sure you do all the required parts of this course. There are some optional things as well.
+{% elif content_type == "topic" %}
+This is a topic. That means you should go through the content and make sure you understand all the material on your own. There are no deliverables.
+{% elif content_type == "project" %}
+This is a project. Please make sure you do the work.
+{% endif %}
+
+
+
+
+{% if prerequisites.length %}
+    <hr/>
+    <strong>Prerequisites</strong>
+
+    <ul>
+        {% for item in prerequisites %}
+            <li>
+
+            {% if item.hard == true %}
+                Required
+            {% elif item.hard == false %}
+                Optional
+            {% else %}
+                Error
+            {% endif %}
+
+            {% contentLink collections, item.path %}
+            </li>
+        {% endfor %}
+    </ul>
+  <hr/>
+{% endif %}
+
+
+{% if flavour_overrides.length %}
+    TODO: display flavour overrides
+{% endif%}
+
+
+{% if from_repo %}
+    Add your code to the repo for this project: {% contentLink collections, from_repo %}
+{% endif %}
+
+<hr/>

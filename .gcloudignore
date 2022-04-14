@@ -1,0 +1,6 @@
+_data/
+_includes/
+.cache/
+.vscode/
+node_modules/
+scripts/

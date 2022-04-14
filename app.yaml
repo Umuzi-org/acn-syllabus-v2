@@ -1,0 +1,183 @@
+runtime: python27
+threadsafe: true
+default_expiration: "30d"
+
+handlers:
+  - url: /(.*\.(appcache|manifest))
+    mime_type: text/cache-manifest
+    static_files: _site/\1
+    upload: _site/(.*\.(appcache|manifest))
+    expiration: "0m"
+
+  - url: /(.*\.atom)
+    mime_type: application/atom+xml
+    static_files: _site/\1
+    upload: _site/(.*\.atom)
+    expiration: "1h"
+
+  - url: /(.*\.crx)
+    mime_type: application/x-chrome-extension
+    static_files: _site/\1
+    upload: _site/(.*\.crx)
+
+  - url: /(.*\.css)
+    mime_type: text/css
+    static_files: _site/\1
+    upload: _site/(.*\.css)
+
+  - url: /(.*\.eot)
+    mime_type: application/vnd.ms-fontobject
+    static_files: _site/\1
+    upload: _site/(.*\.eot)
+
+  - url: /(.*\.htc)
+    mime_type: text/x-component
+    static_files: _site/\1
+    upload: _site/(.*\.htc)
+
+  - url: /(.*\.html)
+    mime_type: text/html
+    static_files: _site/\1
+    upload: _site/(.*\.html)
+    expiration: "1h"
+
+  - url: /(.*\.ico)
+    mime_type: image/x-icon
+    static_files: _site/\1
+    upload: _site/(.*\.ico)
+    expiration: "7d"
+
+  - url: /(.*\.js)
+    mime_type: text/javascript
+    static_files: _site/\1
+    upload: _site/(.*\.js)
+
+  - url: /(.*\.json)
+    mime_type: application/json
+    static_files: _site/\1
+    upload: _site/(.*\.json)
+    expiration: "1h"
+
+  - url: /(.*\.m4v)
+    mime_type: video/m4v
+    static_files: _site/\1
+    upload: _site/(.*\.m4v)
+
+  - url: /(.*\.mp4)
+    mime_type: video/mp4
+    static_files: _site/\1
+    upload: _site/(.*\.mp4)
+
+  - url: /(.*\.(ogg|oga))
+    mime_type: audio/ogg
+    static_files: _site/\1
+    upload: _site/(.*\.(ogg|oga))
+
+  - url: /(.*\.ogv)
+    mime_type: video/ogg
+    static_files: _site/\1
+    upload: _site/(.*\.ogv)
+
+  - url: /(.*\.otf)
+    mime_type: font/opentype
+    static_files: _site/\1
+    upload: _site/(.*\.otf)
+
+  - url: /(.*\.rss)
+    mime_type: application/rss+xml
+    static_files: _site/\1
+    upload: _site/(.*\.rss)
+    expiration: "1h"
+
+  - url: /(.*\.safariextz)
+    mime_type: application/octet-stream
+    static_files: _site/\1
+    upload: _site/(.*\.safariextz)
+
+  - url: /(.*\.(svg|svgz))
+    mime_type: images/svg+xml
+    static_files: _site/\1
+    upload: _site/(.*\.(svg|svgz))
+
+  - url: /(.*\.swf)
+    mime_type: application/x-shockwave-flash
+    static_files: _site/\1
+    upload: _site/(.*\.swf)
+
+  - url: /(.*\.ttf)
+    mime_type: font/truetype
+    static_files: _site/\1
+    upload: _site/(.*\.ttf)
+
+  - url: /(.*\.txt)
+    mime_type: text/plain
+    static_files: _site/\1
+    upload: _site/(.*\.txt)
+
+  - url: /(.*\.unity3d)
+    mime_type: application/vnd.unity
+    static_files: _site/\1
+    upload: _site/(.*\.unity3d)
+
+  - url: /(.*\.webm)
+    mime_type: video/webm
+    static_files: _site/\1
+    upload: _site/(.*\.webm)
+
+  - url: /(.*\.webp)
+    mime_type: image/webp
+    static_files: _site/\1
+    upload: _site/(.*\.webp)
+
+  - url: /(.*\.woff)
+    mime_type: application/x-font-woff
+    static_files: _site/\1
+    upload: _site/(.*\.woff)
+
+  - url: /(.*\.xml)
+    mime_type: application/xml
+    static_files: _site/\1
+    upload: _site/(.*\.xml)
+    expiration: "1h"
+
+  - url: /(.*\.xpi)
+    mime_type: application/x-xpinstall
+    static_files: _site/\1
+    upload: _site/(.*\.xpi)
+
+  # image files
+  - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+    static_files: _site/\1
+    upload: _site/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+
+  # audio files
+  - url: /(.*\.(mid|midi|mp3|wav))
+    static_files: _site/\1
+    upload: _site/(.*\.(mid|midi|mp3|wav))
+
+  # windows files
+  - url: /(.*\.(doc|exe|ppt|rtf|xls))
+    static_files: _site/\1
+    upload: _site/(.*\.(doc|exe|ppt|rtf|xls))
+
+  # compressed files
+  - url: /(.*\.(bz2|gz|rar|tar|tgz|zip))
+    static_files: _site/\1
+    upload: _site/(.*\.(bz2|gz|rar|tar|tgz|zip))
+
+  # index files
+  - url: /(.+)/
+    static_files: _site/\1/index.html
+    upload: _site/(.+)/index.html
+    expiration: "15m"
+
+  - url: /(.+)
+    static_files: _site/\1/index.html
+    upload: _site/(.+)/index.html
+    expiration: "15m"
+
+  # site root
+  - url: /
+    static_files: _site/index.html
+    upload: _site/index.html
+    expiration: "15m"
