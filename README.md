@@ -7,7 +7,7 @@ layout: ""
 To set up the application you'll need to install:
 
 - Nodejs: https://nodejs.org/en/download/
-- Vscode
+- Vscode: https://code.visualstudio.com/download
 
 # Tilde syllabus template
 
@@ -29,5 +29,5 @@ Built with Eleventy https://www.11ty.dev/
 - figure out display of flavour overrides
 - ingest into Tilde with new flavour structure
 - allow users to switch between flavours when viewing content
-- mdx
+- mdx?
 - syllabus/course pages
