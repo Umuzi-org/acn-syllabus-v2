@@ -1,5 +1,6 @@
 ---
 title: That coding life
+content_type: topic
 ---
 
 In this topic, we'll give an overview of coding life. The goal here is to help you to become a professional coder. So you need to know what would be expected of you on the job.
