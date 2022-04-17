@@ -1,0 +1,69 @@
+---
+title: Missing Title
+prerequisites: []
+learning_outcomes: []
+---
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>High performing dev teams</title>
+
+		<link rel="stylesheet" href="/reveal/dist/reset.css">
+		<link rel="stylesheet" href="/reveal/dist/reveal.css">
+
+		<link rel="stylesheet" href="/reveal/dist/theme/black.css">
+
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="/reveal/plugin/highlight/monokai.css">
+
+		<style>
+			body:after {
+				background-image: url(/static/umuzi.png);
+				background-size: 6em 5em;
+				width: 6em;
+				height: 5em;
+				content:"";
+				position: fixed;
+				top: 1em;
+				right: 1em;
+				/* opacity: 0.4; */
+				z-index: -1;
+			}
+
+			span #strong {
+				color: "#ff812c" !important
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+    {{ content | safe }}
+
+			</div>
+		</div>
+
+		<script src="/reveal/dist/reveal.js"></script>
+		<script src="/reveal/plugin/notes/notes.js"></script>
+		<script src="/reveal/plugin/markdown/markdown.js"></script>
+		<script src="/reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

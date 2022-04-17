@@ -8,7 +8,7 @@ learning_outcomes:
   - code_existing_code_update
   - code_basic_calculation
 prerequisites:
-  - path: content/core-coding/test-driven-development
+  - path: content/example-core-coding/test-driven-development
     hard: false
 submission_type: repo
 tags:
@@ -18,7 +18,7 @@ title: simple-calculator part 1
 flavour_overrides:
   - flavour: javascript
     prerequisites:
-      - path: content/core-coding/jasmine/introduction
+      - path: content/example-core-coding/jasmine/introduction
         hard: true
 ---
 

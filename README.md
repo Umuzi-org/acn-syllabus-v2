@@ -2,6 +2,13 @@
 layout: ""
 ---
 
+# Setup
+
+To set up the application you'll need to install:
+
+- Nodejs: https://nodejs.org/en/download/
+- Vscode
+
 # Tilde syllabus template
 
 ```

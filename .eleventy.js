@@ -37,7 +37,13 @@ module.exports = function (eleventyConfig) {
     "jpeg",
     "gif",
     "drawio.svg",
+    // "html",
   ]);
+
+  eleventyConfig.addPassthroughCopy("reveal/");
+  eleventyConfig.addPassthroughCopy("static/");
+  // eleventyConfig.addPassthroughCopy("**/*.css");
+
   // Enabled by default
   eleventyConfig.setDynamicPermalinks(false);
 

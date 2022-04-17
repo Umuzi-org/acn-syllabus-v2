@@ -3,9 +3,9 @@ agile_weight: 3
 content_type: project
 flavours:
   - any_language
-from_repo: content/core-coding/password-checker/part-1
+from_repo: content/example-core-coding/password-checker/part-1
 prerequisites:
-  - path: content/core-coding/password-checker/part-1
+  - path: content/example-core-coding/password-checker/part-1
     hard: true
 submission_type: continue_repo
 tags:

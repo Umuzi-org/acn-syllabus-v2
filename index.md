@@ -5,7 +5,7 @@ eleventyNavigation:
   title: "Home"
 ---
 
-You can learn more about the African Coding Network [here](https://www.africancoding.network/african-coding-network-1)
+You can learn more about the African Coding Network [here](https://www.africancoding.network/african-coding-network-1).
 
 We support a number of different courses.
 
