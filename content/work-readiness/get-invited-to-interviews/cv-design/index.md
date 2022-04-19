@@ -1,9 +1,10 @@
 ---
-content_type: topic
 title: Building your CV
+content_type: project
+submission_type: link
 ---
 
-TODO:
+Please edit this however you need to. No content in here needs to stay :)
 
 - what should be included
 - what should not be?

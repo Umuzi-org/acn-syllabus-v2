@@ -6,75 +6,47 @@ content_type: course
 
 Knowing technical stuff isn't enough to get you hired. This course is designed to turn a coder into a professional.
 
-## TODO:
-
-By wednesday ideally:
-
-- Sheena: set up directory structures
-- Babalwa: help Liezel to get the site up and running (next week). Liez can set up a meeting in Babalwa's calendar
-- Babalwa/Sheena: pair with Liez and help her write some content
-- Sheena: make a rocketchat group (add links to RC so Liez can start setting up)
-
-- Sheena: set up a follow up session??
-
 ## How to be attractive to future employers
 
-- your personal brand: topic
-- {% contentLink collections "content/work-readiness/cv-design" %} project, submit a link
-- the dangers of resume padding: topic
-- setup your linkedin profile: project, submit a link
-- building your portfolio: topic
-- building your portfolio: project
-- job search plan (create a target company list)
-  - how to search for a job efficiently
-  - optimising your application
-- what's the right company for you?
-  - optimise for learning
-  - what kind of company
-- advertise yourself
-  - here are some job hunt platforms. eg offerzen, PNet etc
-- asking for references
-
-Modify the name of topic to Building your professional brand or another name
-Have CV section containing current content.
-LinkedIn content section: A useful playlist link to add - https://www.youtube.com/playlist?list=PL54X5yR8qizsMpvTCqUIEFMeEp-chvcxk
-Interviews content section: A useful blog link to add - https://www.offerzen.com/blog/how-to-kick-ass-at-your-next-interview
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/your-personal-brand" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/cv-design" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/resume-padding" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/your-linkedin-profile" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/what-to-put-in-your-coding-portfolio" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/your-coding-portfolio" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/who-do-you-want-to-work-for" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/making-a-job-search-plan" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/how-to-advertise-yourself" %}
+- {% contentLink collections "content/work-readiness/get-invited-to-interviews/adding-references-to-your-cv" %}
 
 ## The job interview
 
 If you do everything right, you should be able to line up some job interviews. This section is all about nailing the interview.
 
-- {% contentLink collections "content/work-readiness/professional-selfie" %}
-- {% contentLink collections "content/work-readiness/the-coding-interview" %}
-- preparing for a coding test
-- {% contentLink collections "content/work-readiness/the-coding-interview/managing-your-time-in-a-code-test" %}
-- preparing for technical questions
-- preparing for whiteboarding
-- learning from your interview
-- How to communicate with your potential employers. what happens if you don't get a response? Email etiquette
+- {% contentLink collections "content/work-readiness/the-job-interview/professional-selfie" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/the-coding-interview" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/the-coding-interview/managing-your-time-in-a-code-test" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/the-coding-interview/preparing-for-a-coding-test" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/the-coding-interview/preparing-for-technical-questions" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/the-coding-interview/preparing-for-whiteboarding" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/the-coding-interview/take-home-projects" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/learning-from-your-interview" %}
+- {% contentLink collections "content/work-readiness/the-job-interview/communication" %}
 
 ## Your first job offer
 
 Landing your first job is not the end of your journey. It's just the beginning! In this section you'll be learning how to keep your job and how to keep building your career.
 
-- negotiation skills
-- how to turn down an offer. Keep the door open
+- {% contentLink collections "content/work-readiness/job-offer/how-to-turn-down-an-offer" %}
+- {% contentLink collections "content/work-readiness/job-offer/negotiation-skills" %}
 
 ## On the job
 
-- checklist:
-
-  - ask your manager for feedback
-
-- asking for help, and ask again. How to ask for help well
-- attitude:
-
-  - be proactive
-  - be curious
-  - dont take things personally
-  - being a good team mate
-
-- I feel stuck in my role, how do I ask for what I want? Eg: I want to get a permanent position
-- imposter syndrome
-- remote work best practices and communication challenges
-- conflict resolution
+- {% contentLink collections "content/work-readiness/on-the-job/first-3-months-checklist" %}
+- {% contentLink collections "content/work-readiness/on-the-job/asking-for-more" %}
+- {% contentLink collections "content/work-readiness/on-the-job/conflict-resolution" %}
+- {% contentLink collections "content/work-readiness/on-the-job/getting-help" %}
+- {% contentLink collections "content/work-readiness/on-the-job/imposter-syndrome" %}
+- {% contentLink collections "content/work-readiness/on-the-job/remote-work-best-practices" %}
+- {% contentLink collections "content/work-readiness/on-the-job/teamwork-best-practices" %}
+- {% contentLink collections "content/work-readiness/on-the-job/the-right-attitude" %}

@@ -6,6 +6,8 @@ content_type: topic
 
 TODO:
 
+Interviews content section: A useful blog link to add - https://www.offerzen.com/blog/how-to-kick-ass-at-your-next-interview
+
 ## NEEDS REVISION
 
 As a recruit mock interviews are done so to give you a glimpse of what you can expect from a real
