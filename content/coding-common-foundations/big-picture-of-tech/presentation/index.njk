@@ -105,6 +105,7 @@ content_type: none
 
 </section>
 
+
 <section>
 <h2>HTTP request</h2>
 <blockquote style="text-align: left; font-size: 80%">
@@ -286,6 +287,30 @@ content_type: none
     </section>
 </section>
 
+<section>
+    <h3>More terminology</h3>
+
+    <section>
+        <h3>Backend versus frontend</h3>
+
+        <ul>
+            <li>Frontend = Client with a user interface</li>
+            <li>Backend = Application running on a server</li>
+        </ul>
+
+    </section>
+
+    <section>
+    <h3>API</h3>
+        <ul>
+            <li>Application programming interface</li>
+            <li>Allow multiple programs to communicate with each other in a well defined and predictable way</li>
+            <li>Web APIS accept HTTP requests and then respond with machine-readable content (eg JSON)</li>
+            <li>Very strict rules about data format because computers are stupid</li>
+        </ul>
+    </section>
+
+</section>
 
 <section>
     <h3>How does it know who I am?</h3>
@@ -319,43 +344,160 @@ content_type: none
 
 </section>
 
-
-
-
-
-
 <section>
     <h3>Making payments</h3>
 
-    Multiple servers and clients
+    <section>
+        <img src="images/flow-payments-1.drawio.svg" height="550"/>
+    </section>
+
+    <section>
+        <h4>Two Factor Authentication (2FA)</h4>
+
+        <p>Prove your identity by knowing and/or having multiple things:</p>
+
+        <ul>
+            <li>You know your credit card details</li>
+            <li>You have your phone app (which has been registered with the bank)</li>
+            <li>You can unlock your phone</li>
+            <li>You have your fingerprint or you know your password</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h4>Two clients!</h4>
+
+        <ul>
+            <li>The browser, where you access the shopping site</li>
+            <li>The banking app on your phone</li>
+            <li>They don't talk directly to each other</li>
+            <li>They talk to their respective servers</li>
+        </ul>
+    </section>
+
+    <section>
+        <img src="images/flow-payments-2.drawio.svg"/>
+    </section>
+
+    <section>
+        <ul>
+            <li>Multiple servers</li>
+            <li>Multiple clients</li>
+            <li>Some servers can be clients of other servers</li>
+            <li>Lots of back and forth web traffic</li>
+            <li>Data must be updated accurately</li>
+            <li>Security is critical</li>
+            <li>Bugs cost money</li>
+        </ul>
+    </section>
 
 </section>
  
- 
+
 <section>
-    <h3>How different skills fit in</h3>
+    <h3>How different tech skills fit in</h3>
 
     <section>
-        Web dev - dah
+        <h3>Web frontend development</h3>
+        <ul>
+            <li>HTML = layout </li>
+            <li>CSS = styling</li>
+            <li>JS = smarts + interactivity
+                <ul>
+                    <li>It just works in all browsers</li>
+                    <li>Other languages just don't</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 
     <section>
-        Mobile developer - also dah
+        <h3>Mobile development</h3>
+        <p>Many many choices for tools and frameworks</p>
+        <ul>
+            <li>Native code: iOS (Swift + ObjectiveC), Android (Kotlin + Java)</li>
+            <li>Cross platform, not web based: Flutter</li>
+            <li>Cross platform, web-friendly
+                <ul>
+                    <li>Ionic - web views</li>
+                    <li>ReactNative - native components</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 
     <section>
-        Data scientist
+        <h3>Server development</h3>
+        <ul>
+            <li>Many languages to choose from</li>
+            <li>Many databases to choose from</li>
+        </ul>
     </section>
 
     <section>
-        Data Engineer
+        <h3>Data scientist</h3>
+        <ul>
+            <li>Lots of data => lots of insights!</li>
+            <li>Help business make good decisions</li>
+            <li>Help business spot dangers early</li>
+            <li>Help end users with good recommendations and search results</li>
+            <li>Focus on getting answers, not on </li>
+        </ul>
     </section>
 
     <section>
-    Robotic Process Automation (RPA) specialist
+        <h3>Data Engineer</h3>
+
+        <ul>
+            <li>Design data structures that can store all kinds of clever things</li>
+            <li>Piping data from one place to another</li>
+            <li>Able to reason about distributed computing</li>
+            <li>Able to make use of many kinds of databases - SQL and NoSQL</li>
+            <li>Enables data scientists</li>
+            <li>"Productionises" data science</li>
+        </ul>
     </section>
 
     <section>
-    Scrum master
+        <h3>Automated testing</h3>
+        <ul>
+            <li>Bugs cost money</li>
+            <li>Bugs chase customers away</li>
+            <li>The earlier you fix a bug, the cheaper it is</li>
+            <li>Prevents regressions</li>
+        </ul>
     </section>
+
+    <section>
+        <h3>Robotic Process Automation (RPA)</h3>
+
+        <ul>
+            <li>In a serious business, there are lots of repetitive human tasks</li>
+            <li>Sometimes having humans do tasks can be...
+                <ul>
+                    <li>tedious</li>
+                    <li>error-prone</li>
+                    <li>inefficient</li>
+                </ul>
+            </li>
+            <li>RPA lets you automate the boring stuff</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Scrum master</h3>
+        <ul>
+            <li>Building significant software requires cross functional teams</li>
+            <li>Many dependencies, tradeoffs and strong opinions</li>
+            <li>Software projects tend to fail (over time and over budget) if not well managed</li>
+            <li>Scrum master unlocks the potential of a team</li>
+            <li>The best scrum masters can communicate effectively with techies and business</li>
+        </ul>
+
+    </section>
+</section>
+
 <section>
+  <h1>&lt/presentation></h1>
+</section>
