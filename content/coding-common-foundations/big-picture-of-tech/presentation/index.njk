@@ -1,0 +1,361 @@
+---
+layout: "reveal.njk"
+content_type: none
+---
+
+<section>
+  <h2>Big picture of tech</h2>
+  <h3 class="fragment">
+    The forest, not the trees
+  </h3>
+</section>
+
+<section>
+    <h3>Plan of action</h3>
+    <ol>
+        <li>User journey 1: Opening a web page</li>
+        <li>User journey 2: E-commerce</li>
+        <li>How the things we teach fit in</li>
+    </ol>
+</section>
+
+<section>
+    <section>
+        <h3>User journey 1: Opening a web page</h3>
+    </section>
+
+    <section>
+        <h4>What happens when you access https://www.lingscars.com </h4>
+        <img src="images/flow-simple-1.drawio.svg" class="fragment"/>
+    </section>
+ 
+    <section>
+        <h4>What happens when you access https://www.lingscars.com </h4>
+        <img src="images/flow-simple-2.drawio.svg"/>
+    </section>
+
+    <section>
+        <h4>What happens when you access https://www.lingscars.com </h4>
+        <img src="images/flow-simple-3.drawio.svg" height="500"/>
+    </section>
+
+    <section>
+        <h4>What happens when you access https://www.lingscars.com </h4>
+        <img src="images/flow-simple-4.drawio.svg" height="500"/>
+    </section>
+</section>
+
+<section>
+    <h3>Terminology</h3>
+
+<section>
+    <h3>HTML</h3>
+    <ul>
+        <li class="fragment">a file format</li>
+        <li class="fragment">describes the structure of a web page</li>
+        <li class="fragment">can refer to other resources</li>
+    </ul>
+</section>
+
+<section>
+    <h3>HTML</h3>
+    <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+
+    <h3>HTML</h3>
+    <ul>
+        <li>a file format</li>
+        <li>describes the structure of a web page</li>
+        <li>can refer to other resources</li>
+    </ul>
+
+    </code></pre>
+</section>
+
+<section>
+    <h3>Server</h3>
+    <ul>
+        <li>A computer connected to the Internet</li>
+        <li class="fragment">No need for a screen or keyboard</li>
+        <li class="fragment">Stores a bunch of HTML, CSS and JS files on disk</li>
+        <li class="fragment">Listens for HTTP requests - clients request files</li>
+        <li class="fragment">Sends HTTP responses - sends files to clients</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Lies!</h3>
+    <p class="fragment">...to children???</p>
+</section>
+
+<section>
+    <h3>Client</h3>
+    <ul>
+        <li>A device/program that needs stuff from a server</li>
+        <li class="fragment">In this case: Your web browser</li>
+        <li class="fragment">Sometimes a server can be the client of another server! <span class="fragment">...Spoiler alert</span>
+
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>HTTP</h2>
+    A communication protocol
+    <br/><span class="fragment">== a procedure for communicating</span>
+
+</section>
+
+<section>
+<h2>HTTP request</h2>
+<blockquote style="text-align: left; font-size: 80%">
+    Hey Server,<br/><br/>
+
+    How's it hangin? <br/><br/>
+
+    Can you please send me the html file for lingscars.com? <br/><br/>
+
+    Hugs!<br/>
+    Me :)
+</blockquote>
+</section>
+
+<section>
+<h2>HTTP response</h2>
+<blockquote style="text-align: left; font-size: 80%">
+    Hey Client,<br/><br/>
+
+    I'm fabulous. Thanks for asking :) <br/><br/>
+
+    The html file is attached <br/><br/>
+
+    Cheerio<br/>
+    S
+</blockquote>
+</section>
+
+
+</section>
+
+
+
+
+<section>
+    <h3>User journey 2: E-commerce</h3>
+    <section></section>
+    <section>
+        <p>Let's say you want to buy a toaster...</p>
+    </section>
+    <section>
+        <img src="images/flow-full-1.drawio.svg"/>
+    </section>
+    <section>
+        <img src="images/flow-full-2.drawio.svg" height="550"/>
+    </section>
+    <section>
+        <ul>
+            <li>Having a server that only stores and serves files == insufficient</li>
+            <li class="fragment">Server needs to know things and make decisions</li>
+            <li class="fragment">Other entities are involved, eg bank and logistics company</li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Zooming in...</h4>
+    </section>
+
+</section>
+
+<section>
+    <h3>How does search work?</h3>
+
+    <section></section>
+
+    <section>
+        <img src="images/flow-search-1.drawio.svg" height="550"/>
+    </section>
+
+    <section>
+        <img src="images/flow-search-2.drawio.svg" height="550"/>
+    </section>
+
+    <section>
+
+        <p>There are 2 situations where the frontend sends http requests<p>
+        <ul>
+            <li>Synchronous requests: Loading a whole page</li>
+            <li>Asynchronous requests: Page fetches data and then draws it</li>
+        </ul>
+
+    </section>
+    <section>
+        <p>AJAX = Asyncronous JavaScript and XML</p>
+        <ul>
+            <li>Update a web page without reloading the page</li>
+            <li>Request data from a server - after the page has loaded</li>
+            <li>Receive data from a server - after the page has loaded</li>
+            <li>Send data to a server - in the background</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>HTTP</h3>
+        <ul>
+            <li>Not only for HTML responses, it can do JSON too</li>
+            <li>In fact, it can handle many different kinds of responses
+                Eg: images, csv files, pdfs, xml...
+            </li>
+            <li>In fact, there are even different kinds of HTTP requests for different situations</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Focus on the server</h3>
+        <p>There are infinitely many search terms</p>
+
+        <span class="fragment">Every time a server gets a valid request...</span>
+        <span class="fragment">It generates a response</span>
+        <p class="fragment">It doesn't have all the possible responses stored as files</p>
+    </section>
+
+    <section>
+        <img src="images/flow-search-3.drawio.svg" height="550"/>
+    </section>
+
+    <section>
+        <h3>Introducing the database (DB)</h3>
+        <ul>
+            <li>A specialized program on a computer</li>
+            <li>Has access to data in some structured format (think spreadsheets)</li>
+            <li>Has a special query language for getting subsets of data</li>
+            <li>Can search/filter/sort data on request</li>
+        </ul>
+    </section>
+
+    <section>
+        <p>In order to generate the correct responses...</p>
+
+        <ul>
+            <li class="fragment">Access to data, it can't just store a bunch of files</li>
+            <li class="fragment">Enough smarts to generate db search queries</li>
+            <li class="fragment">Enough smarts to wrangle data into responses the client can use</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Server - revised definition</h3>
+        <ul>
+            <li class="fragment">A program/application running on a computer</li>
+            <li class="fragment">Listens for HTTP requests</li>
+            <li class="fragment">Creates HTTP responses
+                <ul>
+                    <li class="fragment">Serves "static" files</li>
+                    <li class="fragment">Generate new "files" on the fly</li>
+                </ul>
+            </li>
+            <li class="fragment">Can access other applications as needed</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>When people say server...</h3>
+
+        <ul>
+            <li class="fragment">They might mean a computer</li>
+            <li class="fragment">They might mean an application</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <img src="images/flow-search-4.drawio.svg" height="550"/>
+    </section>
+
+    <section>
+        <img src="images/flow-search-5.drawio.svg" height="550"/>
+    </section>
+
+    <section>
+        <h3>The client</h3>
+        <ul>
+            <li class="fragment">Doesn't only fetch and display stuff based on urls</li>
+            <li class="fragment">It can figure out when to make requests</li>
+            <li class="fragment">It can figure out what requests to make</li>
+            <li class="fragment">It can interpret results</li>
+            <li class="fragment">It can change what HTML gets displayed to the user</li>
+        </ul>
+    </section>
+</section>
+
+
+<section>
+    <h3>How does it know who I am?</h3>
+
+    <section>
+        <img src="images/flow-auth-1.drawio.svg"/>
+    </section>
+
+    <section>
+        <h3>Cookies and tokens</h3>
+
+        <ul>
+            <li>Cookie != Token</li>
+            <li>Different mechanisms, different superpowers</li>
+            <li>Overlapping use cases</li>
+            <li>Server creates a cookie or a token</li>
+            <li>Client stores it</li>
+            <li>Client sends it to the server on subsequent requests</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h3>But why?</h3>
+        <ul>
+            <li>If I try add something to your shopping basket I can't</li>
+            <li>If I try to look inside your shopping basket, I can't</li>
+            <li>If I create a user account after I've added stuff to my cart, the cart is associated with the new user</li>
+        </ul>
+    </section>
+
+</section>
+
+
+
+
+
+
+<section>
+    <h3>Making payments</h3>
+
+    Multiple servers and clients
+
+</section>
+ 
+ 
+<section>
+    <h3>How different skills fit in</h3>
+
+    <section>
+        Web dev - dah
+    </section>
+
+    <section>
+        Mobile developer - also dah
+    </section>
+
+    <section>
+        Data scientist
+    </section>
+
+    <section>
+        Data Engineer
+    </section>
+
+    <section>
+    Robotic Process Automation (RPA) specialist
+    </section>
+
+    <section>
+    Scrum master
+    </section>
+<section>
