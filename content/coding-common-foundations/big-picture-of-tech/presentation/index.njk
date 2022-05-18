@@ -13,9 +13,9 @@ content_type: none
 <section>
     <h3>Plan of action</h3>
     <ol>
-        <li>User journey 1: Opening a web page</li>
-        <li>User journey 2: E-commerce</li>
-        <li>How the things we teach fit in</li>
+        <li class="fragment">User journey 1: Opening a web page</li>
+        <li class="fragment">User journey 2: E-commerce</li>
+        <li class="fragment">How the things we teach fit in</li>
     </ol>
 </section>
 
@@ -51,7 +51,7 @@ content_type: none
 <section>
     <h3>HTML</h3>
     <ul>
-        <li class="fragment">a file format</li>
+        <li class="fragment">a text file format</li>
         <li class="fragment">describes the structure of a web page</li>
         <li class="fragment">can refer to other resources</li>
     </ul>
@@ -63,7 +63,7 @@ content_type: none
 
     <h3>HTML</h3>
     <ul>
-        <li>a file format</li>
+        <li>a text file format</li>
         <li>describes the structure of a web page</li>
         <li>can refer to other resources</li>
     </ul>
@@ -74,7 +74,7 @@ content_type: none
 <section>
     <h3>Server</h3>
     <ul>
-        <li>A computer connected to the Internet</li>
+        <li class="fragment">A computer connected to the Internet</li>
         <li class="fragment">No need for a screen or keyboard</li>
         <li class="fragment">Stores a bunch of HTML, CSS and JS files on disk</li>
         <li class="fragment">Listens for HTTP requests - clients request files</li>
@@ -90,7 +90,7 @@ content_type: none
 <section>
     <h3>Client</h3>
     <ul>
-        <li>A device/program that needs stuff from a server</li>
+        <li class="fragment">A device/program that needs stuff from a server</li>
         <li class="fragment">In this case: Your web browser</li>
         <li class="fragment">Sometimes a server can be the client of another server! <span class="fragment">...Spoiler alert</span>
 
@@ -154,7 +154,7 @@ content_type: none
     </section>
     <section>
         <ul>
-            <li>Having a server that only stores and serves files == insufficient</li>
+            <li class="fragment">Having a server that only stores and serves files == insufficient</li>
             <li class="fragment">Server needs to know things and make decisions</li>
             <li class="fragment">Other entities are involved, eg bank and logistics company</li>
         </ul>
@@ -169,7 +169,10 @@ content_type: none
 <section>
     <h3>How does search work?</h3>
 
-    <section></section>
+
+        <section>
+        <img src="images/flow-search-0.drawio.svg" height="550"/>
+    </section>
 
     <section>
         <img src="images/flow-search-1.drawio.svg" height="550"/>
@@ -183,29 +186,29 @@ content_type: none
 
         <p>There are 2 situations where the frontend sends http requests<p>
         <ul>
-            <li>Synchronous requests: Loading a whole page</li>
-            <li>Asynchronous requests: Page fetches data and then draws it</li>
+            <li class="fragment">Synchronous requests: Loading a whole page</li>
+            <li class="fragment">Asynchronous requests: Page fetches data and then draws it</li>
         </ul>
 
     </section>
     <section>
         <p>AJAX = Asyncronous JavaScript and XML</p>
         <ul>
-            <li>Update a web page without reloading the page</li>
-            <li>Request data from a server - after the page has loaded</li>
-            <li>Receive data from a server - after the page has loaded</li>
-            <li>Send data to a server - in the background</li>
+            <li class="fragment">Update a web page without reloading the page</li>
+            <li class="fragment">Request data from a server - after the page has loaded</li>
+            <li class="fragment">Receive data from a server - after the page has loaded</li>
+            <li class="fragment">Send data to a server - in the background</li>
         </ul>
     </section>
 
     <section>
         <h3>HTTP</h3>
         <ul>
-            <li>Not only for HTML responses, it can do JSON too</li>
-            <li>In fact, it can handle many different kinds of responses
+            <li class="fragment">Not only for HTML responses, it can do JSON too</li>
+            <li class="fragment">In fact, it can handle many different kinds of responses
                 Eg: images, csv files, pdfs, xml...
             </li>
-            <li>In fact, there are even different kinds of HTTP requests for different situations</li>
+            <li class="fragment">In fact, there are even different kinds of HTTP requests for different situations</li>
         </ul>
     </section>
 
@@ -225,15 +228,15 @@ content_type: none
     <section>
         <h3>Introducing the database (DB)</h3>
         <ul>
-            <li>A specialized program on a computer</li>
-            <li>Has access to data in some structured format (think spreadsheets)</li>
-            <li>Has a special query language for getting subsets of data</li>
-            <li>Can search/filter/sort data on request</li>
+            <li class="fragment">A specialized program on a computer</li>
+            <li class="fragment">Has access to data in some structured format (think spreadsheets)</li>
+            <li class="fragment">Has a special query language for getting subsets of data</li>
+            <li class="fragment">Can search/filter/sort data on request</li>
         </ul>
     </section>
 
     <section>
-        <p>In order to generate the correct responses...</p>
+        <p>In order to generate the correct responses, the server needs...</p>
 
         <ul>
             <li class="fragment">Access to data, it can't just store a bunch of files</li>
@@ -294,8 +297,8 @@ content_type: none
         <h3>Backend versus frontend</h3>
 
         <ul>
-            <li>Frontend = Client with a user interface</li>
-            <li>Backend = Application running on a server</li>
+            <li class="fragment">Frontend = Client with a user interface</li>
+            <li class="fragment">Backend = Application running on a server</li>
         </ul>
 
     </section>
@@ -303,10 +306,10 @@ content_type: none
     <section>
     <h3>API</h3>
         <ul>
-            <li>Application programming interface</li>
-            <li>Allow multiple programs to communicate with each other in a well defined and predictable way</li>
-            <li>Web APIS accept HTTP requests and then respond with machine-readable content (eg JSON)</li>
-            <li>Very strict rules about data format because computers are stupid</li>
+            <li class="fragment">Application programming interface</li>
+            <li class="fragment">Allow multiple programs to communicate with each other in a well defined and predictable way</li>
+            <li class="fragment">Web APIS accept HTTP requests and then respond with machine-readable content (eg JSON)</li>
+            <li class="fragment">Very strict rules about data format because computers are stupid</li>
         </ul>
     </section>
 
@@ -316,6 +319,10 @@ content_type: none
     <h3>How does it know who I am?</h3>
 
     <section>
+        <img src="images/flow-auth-0.drawio.svg" height="550"/>
+    </section>
+
+    <section>
         <img src="images/flow-auth-1.drawio.svg"/>
     </section>
 
@@ -323,12 +330,12 @@ content_type: none
         <h3>Cookies and tokens</h3>
 
         <ul>
-            <li>Cookie != Token</li>
-            <li>Different mechanisms, different superpowers</li>
-            <li>Overlapping use cases</li>
-            <li>Server creates a cookie or a token</li>
-            <li>Client stores it</li>
-            <li>Client sends it to the server on subsequent requests</li>
+            <li class="fragment">Cookie != Token</li>
+            <li class="fragment">Different mechanisms, different superpowers</li>
+            <li class="fragment">Overlapping use cases</li>
+            <li class="fragment">Server creates a cookie or a token</li>
+            <li class="fragment">Client stores it</li>
+            <li class="fragment">Client sends it to the server on subsequent requests</li>
         </ul>
 
     </section>
@@ -336,9 +343,12 @@ content_type: none
     <section>
         <h3>But why?</h3>
         <ul>
-            <li>If I try add something to your shopping basket I can't</li>
-            <li>If I try to look inside your shopping basket, I can't</li>
-            <li>If I create a user account after I've added stuff to my cart, the cart is associated with the new user</li>
+            <li class="fragment">If I try add something to your shopping basket I can't</li>
+            <li class="fragment">If I try to look inside your shopping basket, I can't</li>
+            <li class="fragment">If I create a user account after I've added stuff to my cart, the cart is associated with the new user</li>
+            <li class="fragment">Continuity of experience</li>
+            <li class="fragment">Security!</li>
+
         </ul>
     </section>
 
@@ -346,6 +356,10 @@ content_type: none
 
 <section>
     <h3>Making payments</h3>
+
+    <section>
+        <img src="images/flow-payments-0.drawio.svg" height="550"/>
+    </section>
 
     <section>
         <img src="images/flow-payments-1.drawio.svg" height="550"/>
@@ -357,10 +371,10 @@ content_type: none
         <p>Prove your identity by knowing and/or having multiple things:</p>
 
         <ul>
-            <li>You know your credit card details</li>
-            <li>You have your phone app (which has been registered with the bank)</li>
-            <li>You can unlock your phone</li>
-            <li>You have your fingerprint or you know your password</li>
+            <li class="fragment">You know your credit card details</li>
+            <li class="fragment">You have your phone app (which has been registered with the bank)</li>
+            <li class="fragment">You can unlock your phone</li>
+            <li class="fragment">You have your fingerprint or you know your password</li>
         </ul>
 
     </section>
@@ -369,10 +383,10 @@ content_type: none
         <h4>Two clients!</h4>
 
         <ul>
-            <li>The browser, where you access the shopping site</li>
-            <li>The banking app on your phone</li>
-            <li>They don't talk directly to each other</li>
-            <li>They talk to their respective servers</li>
+            <li class="fragment">The browser, where you access the shopping site</li>
+            <li class="fragment">The banking app on your phone</li>
+            <li class="fragment">They don't talk directly to each other</li>
+            <li class="fragment">They talk to their respective servers</li>
         </ul>
     </section>
 
@@ -382,13 +396,13 @@ content_type: none
 
     <section>
         <ul>
-            <li>Multiple servers</li>
-            <li>Multiple clients</li>
-            <li>Some servers can be clients of other servers</li>
-            <li>Lots of back and forth web traffic</li>
-            <li>Data must be updated accurately</li>
-            <li>Security is critical</li>
-            <li>Bugs cost money</li>
+            <li class="fragment">Multiple servers</li>
+            <li class="fragment">Multiple clients</li>
+            <li class="fragment">Some servers can be clients of other servers</li>
+            <li class="fragment">Lots of back and forth web traffic</li>
+            <li class="fragment">Data must be updated accurately</li>
+            <li class="fragment">Security is critical</li>
+            <li class="fragment">Bugs cost money</li>
         </ul>
     </section>
 
@@ -401,12 +415,12 @@ content_type: none
     <section>
         <h3>Web frontend development</h3>
         <ul>
-            <li>HTML = layout </li>
-            <li>CSS = styling</li>
-            <li>JS = smarts + interactivity
+            <li class="fragment">HTML = layout </li>
+            <li class="fragment">CSS = styling</li>
+            <li class="fragment">JS = smarts + interactivity
                 <ul>
-                    <li>It just works in all browsers</li>
-                    <li>Other languages just don't</li>
+                    <li class="fragment">It just works in all browsers</li>
+                    <li class="fragment">Other languages just don't</li>
                 </ul>
             </li>
         </ul>
@@ -416,12 +430,12 @@ content_type: none
         <h3>Mobile development</h3>
         <p>Many many choices for tools and frameworks</p>
         <ul>
-            <li>Native code: iOS (Swift + ObjectiveC), Android (Kotlin + Java)</li>
-            <li>Cross platform, not web based: Flutter</li>
-            <li>Cross platform, web-friendly
+            <li class="fragment">Native code: iOS (Swift + ObjectiveC), Android (Kotlin + Java)</li>
+            <li class="fragment">Cross platform, not web based: Flutter</li>
+            <li class="fragment">Cross platform, web-friendly
                 <ul>
-                    <li>Ionic - web views</li>
-                    <li>ReactNative - native components</li>
+                    <li class="fragment">Ionic - web views</li>
+                    <li class="fragment">ReactNative - native components</li>
                 </ul>
             </li>
         </ul>
@@ -430,19 +444,19 @@ content_type: none
     <section>
         <h3>Server development</h3>
         <ul>
-            <li>Many languages to choose from</li>
-            <li>Many databases to choose from</li>
+            <li class="fragment">Many languages to choose from</li>
+            <li class="fragment">Many databases to choose from</li>
         </ul>
     </section>
 
     <section>
         <h3>Data scientist</h3>
         <ul>
-            <li>Lots of data => lots of insights!</li>
-            <li>Help business make good decisions</li>
-            <li>Help business spot dangers early</li>
-            <li>Help end users with good recommendations and search results</li>
-            <li>Focus on getting answers, not on </li>
+            <li class="fragment">Lots of data => lots of insights!</li>
+            <li class="fragment">Help business make good decisions</li>
+            <li class="fragment">Help business spot dangers early</li>
+            <li class="fragment">Help end users with good recommendations and search results</li>
+            <li class="fragment">Focus on getting answers, not on </li>
         </ul>
     </section>
 
@@ -450,22 +464,23 @@ content_type: none
         <h3>Data Engineer</h3>
 
         <ul>
-            <li>Design data structures that can store all kinds of clever things</li>
-            <li>Piping data from one place to another</li>
-            <li>Able to reason about distributed computing</li>
-            <li>Able to make use of many kinds of databases - SQL and NoSQL</li>
-            <li>Enables data scientists</li>
-            <li>"Productionises" data science</li>
+            <li class="fragment">Design data structures that can store all kinds of clever things</li>
+            <li class="fragment">Piping data from one place to another</li>
+            <li class="fragment">Able to reason about distributed computing</li>
+            <li class="fragment">Able to make use of many kinds of databases - SQL and NoSQL</li>
+            <li class="fragment">Enables data scientists</li>
+            <li class="fragment">"Productionises" data science</li>
         </ul>
     </section>
 
     <section>
         <h3>Automated testing</h3>
         <ul>
-            <li>Bugs cost money</li>
-            <li>Bugs chase customers away</li>
-            <li>The earlier you fix a bug, the cheaper it is</li>
-            <li>Prevents regressions</li>
+            <li class="fragment">Bugs cost money</li>
+            <li class="fragment">Bugs chase customers away</li>
+            <li class="fragment">The earlier you fix a bug, the cheaper it is</li>
+            <li class="fragment">Prevents regressions</li>
+            <li class="fragment">Help with security</li>
         </ul>
     </section>
 
@@ -473,26 +488,26 @@ content_type: none
         <h3>Robotic Process Automation (RPA)</h3>
 
         <ul>
-            <li>In a serious business, there are lots of repetitive human tasks</li>
-            <li>Sometimes having humans do tasks can be...
+            <li class="fragment">In a serious business, there are lots of repetitive human tasks</li>
+            <li class="fragment">Sometimes having humans do tasks can be...
                 <ul>
-                    <li>tedious</li>
-                    <li>error-prone</li>
-                    <li>inefficient</li>
+                    <li class="fragment">tedious</li>
+                    <li class="fragment">error-prone</li>
+                    <li class="fragment">inefficient</li>
                 </ul>
             </li>
-            <li>RPA lets you automate the boring stuff</li>
+            <li class="fragment">RPA lets you automate the boring stuff</li>
         </ul>
     </section>
 
     <section>
         <h3>Scrum master</h3>
         <ul>
-            <li>Building significant software requires cross functional teams</li>
-            <li>Many dependencies, tradeoffs and strong opinions</li>
-            <li>Software projects tend to fail (over time and over budget) if not well managed</li>
-            <li>Scrum master unlocks the potential of a team</li>
-            <li>The best scrum masters can communicate effectively with techies and business</li>
+            <li class="fragment">Building significant software requires cross functional teams</li>
+            <li class="fragment">Many dependencies, tradeoffs and strong opinions</li>
+            <li class="fragment">Software projects tend to fail (over time and over budget) if not well managed</li>
+            <li class="fragment">Scrum master unlocks the potential of a team</li>
+            <li class="fragment">The best scrum masters can communicate effectively with techies and business</li>
         </ul>
 
     </section>
